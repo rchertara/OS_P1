@@ -16,12 +16,22 @@
  * Your goal must be to change the stack frame of caller (main function)
  * such that you get to the line after "r2 = *( (int *) 0 )"
  */
+
+
 void segment_fault_handler(int signum)
 {
 
     printf("I am slain!\n");
 
+   
     /* Implement Code Here */
+
+    int *ptr; 
+    ptr = &signum; 
+    char *p = (char*)ptr;
+    p+=220;
+    ptr = (int *)p;
+    *ptr += 2;
 }
 
 int main(int argc, char *argv[])
