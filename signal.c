@@ -29,7 +29,7 @@ void segment_fault_handler(int signum)
     int *ptr; 
     ptr = &signum; 
     char *p = (char*)ptr;
-    p+=220;
+    p+=204;
     ptr = (int *)p;
     *ptr += 2;
 }
