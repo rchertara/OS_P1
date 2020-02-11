@@ -22,7 +22,9 @@ int main(int argc, char *argv[])
     double total = 0;
     struct timeval start, end;
     /* Implement Code Here */
-    for (int i = 0; i < 5000000; i++)
+
+    int i;
+    for (i = 0; i < 5000000; i++)
     {
 
         gettimeofday(&start, NULL);
