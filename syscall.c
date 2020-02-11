@@ -4,7 +4,7 @@
  *   1.Rahil Chertara; rc924
  *   2.Julian Seepersaud; jss395
  *
- * ILab Machine Tested on:
+ * ILab Machine Tested on: kill.cs.rutgers.edu
  *
  */
 
